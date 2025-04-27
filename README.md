@@ -10,27 +10,27 @@ Whether you are a **beginner just starting out** or a **developer looking to str
 ## 📚 Table of Contents
 
 ### Beginner Level
-- [Hello World and Basic Syntax](#hello-world-and-basic-syntax)
-- [Data Types, Variables, and Operators](#data-types-variables-and-operators)
-- [Control Flow (if, switch, loops)](#control-flow-if-switch-loops)
-- [Functions (Methods)](#functions-methods)
-- [Object-Oriented Programming (OOP) Basics](#object-oriented-programming-oop-basics)
-- [Arrays and Strings](#arrays-and-strings)
+- Hello World and Basic Syntax
+- Data Types, Variables, and Operators
+- Control Flow (if, switch, loops)
+- Functions (Methods)
+- Object-Oriented Programming (OOP) Basics
+- Arrays and Strings
 
 ### Intermediate Level
-- [Exception Handling](#exception-handling)
-- [Collections Framework (List, Set, Map)](#collections-framework-list-set-map)
-- [Generics](#generics)
-- [File I/O (Input and Output)](#file-io-input-and-output)
-- [Multithreading and Concurrency](#multithreading-and-concurrency)
-- [Lambda Expressions and Functional Programming](#lambda-expressions-and-functional-programming)
-- [Introduction to JDBC (Database Connectivity)](#introduction-to-jdbc-database-connectivity)
+- Exception Handling
+- Collections Framework (List, Set, Map)
+- Generics
+- File I/O (Input and Output)
+- Multithreading and Concurrency
+- Lambda Expressions and Functional Programming
+- Introduction to JDBC (Database Connectivity)
 
 ### Advanced Level
-- [Design Patterns (Singleton, Factory, etc.)](#design-patterns-singleton-factory-etc)
-- [Unit Testing with JUnit](#unit-testing-with-junit)
-- [Maven and Gradle (Build Tools)](#maven-and-gradle-build-tools)
-- [Introduction to APIs and REST](#introduction-to-apis-and-rest)
+- Design Patterns (Singleton, Factory, etc.)
+- Unit Testing with JUnit
+- Maven and Gradle (Build Tools)
+- Introduction to APIs and REST
 
 ---
 
