@@ -3,6 +3,8 @@ public class Strings {
 
     public static void main(String[] args) {
         String name = "Talib";
+
+        // Some usefull methods
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
         System.out.println("  ".isBlank());
@@ -15,7 +17,6 @@ public class Strings {
         System.out.println(name.replace("T", "H")); 
         System.out.println(name.charAt(0)); 
         System.out.println(name.charAt(2)); 
-        System.out.println(name.concat(" Ilahi"));
-        System.out.println(name.join("Talib", "sda"));
+        System.out.println(name.concat(" Ilahi")); // Add with name variable
     }
 }
