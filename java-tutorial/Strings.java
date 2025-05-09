@@ -18,5 +18,16 @@ public class Strings {
         System.out.println(name.charAt(0)); 
         System.out.println(name.charAt(2)); 
         System.out.println(name.concat(" Ilahi")); // Add with name variable
+
+        // Equality in Strings
+        String name1 = "Talib";
+        String name2 = "Talib"; 
+
+        String name3 = new String("Talib");
+        System.out.println("Check equality with ==");
+        System.out.println(name1 == name2);     //true 
+        System.out.println(name1 == name3);     //false
+
+        System.out.println(name1.equals(name3));
     }
 }
