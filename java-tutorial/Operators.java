@@ -27,7 +27,7 @@ public class Operators {
         System.out.println("c = " + c);
         System.out.println("d = " + d);
         System.out.println("e = " + e);
-        
+
         // arithmetic using doubles
         System.out.println("\nFloating Point Arithmetic");
         double da = 1 + 1;
@@ -53,5 +53,44 @@ public class Operators {
          * da = 2.0
          * db = 6.0
          */
+
+        // Modulus Operator
+        int x = 42;
+        double y = 42.25;
+        System.out.println("x mod 10 = " + x % 10);
+        System.out.println("y mod 10 = " + y % 10);
+
+        // Assignment operators.
+        int m = 1;
+        int n = 2;
+        int o = 3;
+        m += 5;
+        n *= 4;
+        o += a * b;
+        o %= 6;
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+        System.out.println("o = " + o);
+
+        // Increment and Decrement
+        x = x + 1; // can be rewritten like this by use of the increment operator:
+        x++;
+
+        // this statement:
+        x = x - 1;
+        // is equivalent to
+        x--;
+
+        int f = 1;
+        int g = 2;
+        int i;
+        int j;
+        i = ++m;
+        j = n++;
+        j++;
+        System.out.println("f = " + f);
+        System.out.println("g = " + g);
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
     }
 }
