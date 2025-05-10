@@ -41,6 +41,6 @@ public class Strings {
 
         String[] fNames = {"Ali", "Nawaz", "Yahya"};
         String join = String.join(" | ", fNames);
-        System.out.println(join);
+        System.out.println(join); // Ali | Nawaz | Yahya
     }
 }
