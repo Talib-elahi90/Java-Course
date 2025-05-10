@@ -4,6 +4,8 @@ public class Strings {
     public static void main(String[] args) {
         String name = "Talib";
 
+
+
         // Some usefull methods
         System.out.println(name.toUpperCase());
         System.out.println(name.toLowerCase());
@@ -28,6 +30,17 @@ public class Strings {
         System.out.println(name1 == name2);     //true 
         System.out.println(name1 == name3);     //false
 
-        System.out.println(name1.equals(name3));
+        System.out.println(name1.equals(name3)); // true
+
+        // If you want to convert an integer to a string 
+        String number = String.valueOf(1);
+        System.out.println(number); // 1 
+
+        String format = String.format("number %s: ", number);
+        System.out.println(format);  // Number 1
+
+        String[] fNames = {"Ali", "Nawaz", "Yahya"};
+        String join = String.join(" | ", fNames);
+        System.out.println(join);
     }
 }
