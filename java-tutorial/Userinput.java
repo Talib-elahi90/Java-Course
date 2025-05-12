@@ -11,6 +11,8 @@ public class Userinput {
         System.out.print("Your age? ");
         int age = scanner.nextInt(); // .nextInt return an Integer
         System.out.println(age);
+
+        // Go explore .nextDouble, .nextBoolean ...  
     }
 
 }
