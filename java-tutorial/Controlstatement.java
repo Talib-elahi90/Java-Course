@@ -88,7 +88,7 @@ public class Controlstatement {
 
         int MONTH = 4;
         String sson;
-        switch (month) {
+        switch (MONTH) {
             case 12:
             case 1:
             case 2:
@@ -114,5 +114,6 @@ public class Controlstatement {
         }
         System.out.println("April is in the " + sson + ".");
 
+        // Output: April is in the Spring.
     }
 }
