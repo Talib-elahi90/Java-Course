@@ -78,7 +78,7 @@ public class Exceptions {
          */
 
 
-        //  Runtime Exception (Checked Exception)
+        //  Compiletime Exception (UnChecked Exception)
         try {
             File file = new File("src/file.txt");
             if(!(file.exists())) {
