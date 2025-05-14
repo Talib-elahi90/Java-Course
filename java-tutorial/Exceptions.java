@@ -1,3 +1,6 @@
+import java.io.File;
+import java.io.IOException;
+
 public class Exceptions {
 
     public static void main(String[] args) {
@@ -62,7 +65,7 @@ public class Exceptions {
             System.out.println("Finally always run.");
         }
 
-        
+
         // OR also you can use
         /*
          * catch (NumberFormatException | ArithmeticException e) {
@@ -73,6 +76,17 @@ public class Exceptions {
          * System.out.println("Finally always run.");
          * }
          */
+
+
+        //  Runtime Exception (Checked Exception)
+        try {
+            File file = new File("src/file.txt");
+            if(!(file.exists())) {
+                file.createNewFile();
+            }            
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
 
     }
 }
