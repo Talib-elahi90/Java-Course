@@ -12,7 +12,6 @@ public class Exceptions {
          * }
          */
 
-
         // Handle Exception
         /*
          * try {
@@ -25,13 +24,11 @@ public class Exceptions {
          * }
          */
 
-
         // Another Exception
         // int number = Integer.parseInt("1"); // its fine
         // int number = Integer.parseInt("1x"); // it occurs Exception.
         // NumberFormatException: For input string: "1x"
         // System.out.println(number);
-
 
         // Handle this Exception
         try {
@@ -40,7 +37,6 @@ public class Exceptions {
         } catch (NumberFormatException nfe) {
             System.out.println("Enter Number.");
         }
-
 
         // Both Exceptions can be handle.
         try {
@@ -65,7 +61,6 @@ public class Exceptions {
             System.out.println("Finally always run.");
         }
 
-
         // OR also you can use
         /*
          * catch (NumberFormatException | ArithmeticException e) {
@@ -77,16 +72,22 @@ public class Exceptions {
          * }
          */
 
-
-        //  Compiletime Exception (UnChecked Exception)
+        // Compiletime Exception (UnChecked Exception)
         try {
             File file = new File("src/file.txt");
-            if(!(file.exists())) {
+            if (!(file.exists())) {
                 file.createNewFile();
-            }            
+            }
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
 
+        System.out.println(divide(4, 0););
+
+    }
+
+    public static double divide(int a, int b) {
+        int result = a / b;
+        return result;
     }
 }
