@@ -82,12 +82,18 @@ public class Exceptions {
             System.out.println(e.getMessage());
         }
 
-        System.out.println(divide(4, 0););
+        try {
+            System.out.println(divide(5, 0));
+        } catch (Exception ex) {
+            System.out.println(ex.fillInStackTrace());
+        }
 
     }
 
-    public static double divide(int a, int b) {
-        int result = a / b;
-        return result;
+    public static double divide(int a, int b) throws Exception {
+        if (b == 0) {
+            throw new ArithmeticException("Cannot divide by zero.");
+        }
+        return a / b;
     }
 }

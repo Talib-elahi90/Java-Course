@@ -80,10 +80,29 @@ public class IterationStatement {
         // for loop
         // int forLoop;
         // for (forLoop = 10; forLoop > 0; forLoop--)
-        //     System.out.println("for loop. " + forLoop);
+        // System.out.println("for loop. " + forLoop);
 
         // here, forLoop is declared inside of the for loop
         for (int forLoop = 10; forLoop > 0; forLoop--)
             System.out.println("for loop." + forLoop);
+
+
+        // Test for primes.    
+        int checkPrime = 18;
+        boolean isPrime;
+
+        if (checkPrime < 2)
+            isPrime = false;
+        else
+            isPrime = true;
+
+        for (int x = 2; x < checkPrime / x; x++) {
+            if ((checkPrime % x) == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if(isPrime) System.out.println("Prime");
+        else System.out.println("Not Prime");
     }
 }
