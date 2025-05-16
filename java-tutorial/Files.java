@@ -25,6 +25,7 @@ public class Files {
         // Write data in file
         File file = createFile("java-tutorial/data.txt");
         // writeFile(file, false);
+        updateWriteFile(file, true);
         readFile(file);
 
     }
@@ -41,19 +42,19 @@ public class Files {
 
     }
 
-    private static void writeFile(File file, boolean append) {
-        try {
-            FileWriter fileWriter = new FileWriter(file, append); // If you want to append data used true in second
-                                                                  // args.
-            PrintWriter write = new PrintWriter(fileWriter);
-            write.println("Software Engineer.");
-            write.flush();
-            write.close();
+    // private static void writeFile(File file, boolean append) {
+    //     try {
+    //         FileWriter fileWriter = new FileWriter(file, append); // If you want to append data used true in second
+    //                                                               // args.
+    //         PrintWriter write = new PrintWriter(fileWriter);
+    //         write.println("Software Engineer.");
+    //         write.flush();
+    //         write.close();
 
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
-    }
+    //     } catch (IOException e) {
+    //         System.out.println(e.getMessage());
+    //     }
+    // }
 
     private static File createFile(String path) {
         try {
@@ -67,5 +68,17 @@ public class Files {
             throw new IllegalStateException(e);
         }
 
+    }
+
+    // We don't need these methods (flush or close) file if we used try with resources.
+    private static void updateWriteFile(File file, boolean append) {
+        try (
+            FileWriter fileWriter = new FileWriter(file, append);
+            PrintWriter write = new PrintWriter(fileWriter)) {
+            write.println("Pakistan.");
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
