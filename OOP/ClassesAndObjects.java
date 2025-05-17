@@ -8,10 +8,13 @@ public class ClassesAndObjects {
         Cat kitty = new Cat();
         kitty.setName("Kitty");
         kitty.meow();
+        System.out.println("getName: "+ kitty.getName());
         
         Cat sunCat = new Cat();
         sunCat.setName("Sun");
         sunCat.meow();
+        System.out.println("getName: "+ sunCat.getName());
+
     }
 
     /*
