@@ -7,13 +7,13 @@ public class ClassesAndObjects {
         // cat.name = "Hoho"; // like this is actually bad.
         Cat kitty = new Cat();
         kitty.setName("Kitty");
-        kitty.meow();
         System.out.println("getName: "+ kitty.getName());
+        kitty.meow();
         
         Cat sunCat = new Cat();
         sunCat.setName("Sun");
-        sunCat.meow();
         System.out.println("getName: "+ sunCat.getName());
+        sunCat.meow();
 
     }
 
