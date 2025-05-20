@@ -18,7 +18,7 @@ public class Constructors {
         Dog puppy = new Dog("Puppy:)");
         System.out.println(dog.getColor());
         System.out.println(dog);
-        System.out.println(puppy.getAge());
+        System.out.println(puppy.getAge()); // by default age is zero.
         System.out.println(puppy);
         // Output 
         // OOP.Dog@251a69d7
