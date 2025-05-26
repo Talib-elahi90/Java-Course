@@ -11,9 +11,9 @@ public class Overriding {
         Animal a2 = new Animal("Donkey", 6);
         System.out.println(a1 == a2); // Compare reference
         // System.out.println(a1.equals(a2)); // both compare references, let's fix it for comparing object values.
-        
+
         // After fix it
-        System.out.println(a1.equals(a2)); 
+        System.out.println(a1.equals(a2)); //true
         
     }
 }
