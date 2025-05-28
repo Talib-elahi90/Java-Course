@@ -1,96 +1,165 @@
 public class Operators {
     public static void main(String[] args) {
+        // ==5========= Arithmetic Operators
+        // +, -, ++, --
+        
+        System.out.println("===== Unary Arithmetic Operators =====");
+
+        int a = +15;
+        int a2 = -15;
+        int a3 = ++a;
+        int a4 = a++;
+        int a5 = --a;
+        int a6 = a--;
+        System.out.println("a = " + a); // 15
+        System.out.println("a2 = " + a2); // -15
+        System.out.println("a3 = " + a3); // 16
+        System.out.println("a4 = " + a4); // 16
+        System.out.println("a5 = " + a5); // 16
+        System.out.println("a6 = " + a6); // 16
+        System.out.println("a = " + a); // 15
+
+        System.out.println();
+
+        // *** Binary Arithmetic Operators
+        // +, -, /, %, *
+
+        System.out.println("===== Binary Arithmetic Operators =====");
+        int i7 = 10 + 1;
+        int i8 = i7 - 1;
+        int i9 = i8 / 2;
+        int i10 = i9 % 2;
+        int i11 = 5 % 10;
+        int i12 = i10 * 3;
+
+        System.out.println("i7 = " + i7); // 11
+        System.out.println("i8 = " + i8); // 10
+        System.out.println("i9 = " + i9); // 5
+        System.out.println("i10 = " + i10); // 1
+        System.out.println("i11 = " + i11); // 5
+        System.out.println("i12 = " + i12); // 3
+        System.out.println("Hello " + "World" + "!");
+
+        System.out.println();
+
+        // ============ Assignment Operators
+        // =, +=, -=, *=, /=, %=
+
+        System.out.println("===== Assignment Operators =====");
+
+        int b = 10;
+        b += 2;
+        System.out.println(b); // 12
+
+        System.out.println();
+
+        // ============ Relational Operators
+        // ==, !=, >, <, >=, <=
+
+        System.out.println("===== Relational Operators =====");
+
+        int c = 10;
+        int d = 20;
+
+        System.out.println(c == d); // false
+        System.out.println(c != d); // true
+        System.out.println(c > d); // false
+        System.out.println(c < d); // true
+        System.out.println(c >= d); // false
+        System.out.println(c <= d); // true
+
+        System.out.println();
+
+        // ============ Logical Operators
+
+        // &, &&, |, ||, !, ^
+
+        System.out.println("===== Logical Operators =====");
+
+        // System.out.println(false & (5 / 0 == 0) ); // Runtime Exception
+        System.out.println(false && (5 / 0 == 0)); // false
+        // System.out.println(true | (5 / 0 == 0) ); // Runtime Exception
+        System.out.println(true || (5 / 0 == 0)); // true
+        System.out.println("!true = " + !true); // false
+        System.out.println(true ^ true); // false
+        System.out.println(true ^ false); // true
+        System.out.println(false ^ true); // true
+
+        System.out.println();
+
+        // ============ Bitwise Operators
+
+        // &, |, ^, ~, >>, >>>, <<
+
+        System.out.println("===== Bitwise Operators =====");
+
+        System.out.println("4 & 5 = " + (4 & 5)); // 4
         /*
-         * (+) Addition (also unary plus)
-         * (–) Subtraction (also unary minus)
-         * (*) Multiplication
-         * (/) Division
-         * (%) Modulus
-         * (++) Increment
-         * (+=) Addition assignment
-         * (–=) Subtraction assignment
-         * (*=) Multiplication assignment
-         * (/=) Division assignment
-         * (%=) Modulus assignment
-         * (––) Decrement
+         * Explaination
+         * 1 0 0
+         * & & &
+         * 1 0 1
+         * -----
+         * 1 0 0 = 4
          */
 
-        // Arithmetic Operators
-        System.out.println("Integer Arithmetic");
-        int a = 1 + 1;
-        int b = a * 3;
-        int c = b / 4;
-        int d = c - a;
-        int e = -d;
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-        System.out.println("c = " + c);
-        System.out.println("d = " + d);
-        System.out.println("e = " + e);
-
-        // arithmetic using doubles
-        System.out.println("\nFloating Point Arithmetic");
-        double da = 1 + 1;
-        double db = da * 3;
-        double dc = db / 4;
-        double dd = dc - a;
-        double de = -dd;
-        System.out.println("da = " + da);
-        System.out.println("db = " + db);
-        System.out.println("dc = " + dc);
-        System.out.println("dd = " + dd);
-        System.out.println("de = " + de);
-
+        System.out.println("4 | 5 = " + (4 | 5)); // 5
         /*
-         * When you run this program, you will see the following output:
-         * Integer Arithmetic
-         * a = 2
-         * b = 6
-         * c = 1
-         * d = -1
-         * e = 1
-         * Floating Point Arithmetic
-         * da = 2.0
-         * db = 6.0
+         * Explaination
+         * 1 0 0
+         * | | |
+         * 1 0 1
+         * -----
+         * 1 0 1 = 5
          */
 
-        // Modulus Operator
-        int x = 42;
-        double y = 42.25;
-        System.out.println("x mod 10 = " + x % 10);
-        System.out.println("y mod 10 = " + y % 10);
+        System.out.println("4 ^ 5 = " + (4 ^ 5)); // 1
+        /*
+         * Explaination
+         * 1 0 0
+         * ^ ^ ^
+         * 1 0 1
+         * -----
+         * 0 0 1 = 1
+         */
 
-        // Assignment operators.
-        int m = 1;
-        int n = 2;
-        int o = 3;
-        m += 5;
-        n *= 4;
-        o += a * b;
-        o %= 6;
-        System.out.println("m = " + m);
-        System.out.println("n = " + n);
-        System.out.println("o = " + o);
+        System.out.println("~1 = " + ~1);
+        System.out.println(Integer.toBinaryString(1)); // 00000001
+        System.out.println(Integer.toBinaryString(-2)); // 11111110
+        System.out.println((byte) 0b11111110); // -2
+        System.out.println((byte) 0b10000000); // -128 = -(2 ^ 7)
+        System.out.println((byte) 0b11000000); // -64 = -(2 ^ 7) + (2 ^ 6)
 
-        // Increment and Decrement
-        x = x + 1; // can be rewritten like this by use of the increment operator:
-        x++;
+        System.out.println("5 = " + 0b101);
+        System.out.println("5 >> 1 = " + (0b101 >> 1));
+        System.out.println("5 in binary format = " + Integer.toBinaryString(5));
+        System.out.println("2 in binary format = " + Integer.toBinaryString(2)); // 10
 
-        // this statement:
-        x = x - 1;
-        // is equivalent to
-        x--;
+        System.out.println("5 = " + 0b101); // 000000101
+        System.out.println("5 >>> 1 = " + (0b101 >>> 1)); // 000000010
 
-        int f = 1;
-        int g = 2;
-        int i;
-        int j;
-        i = ++m;
-        j = n++;
-        j++;
-        System.out.println("f = " + f);
-        System.out.println("g = " + g);
-        System.out.println("i = " + i);
-        System.out.println("j = " + j);
+        int negativeByteValue = 0b11111111111111111111111110000000;
+        System.out.println("-128 = " + negativeByteValue); // 11111111111111111111111110000000
+        System.out.println("-128 >>> 1 = " + (negativeByteValue >>> 1)); // 01111111111111111111111111000000
+        System.out.println("-128 >> 1 = " + (negativeByteValue >> 1)); // 11111111111111111111111111000000
+
+        System.out.println("5 = " + 0b101);
+        System.out.println("5 << 1 = " + (0b101 << 1));
+        System.out.println("5 in binary format = " + Integer.toBinaryString(5));
+        System.out.println("10 in binary format = " + Integer.toBinaryString(10));
+
+        System.out.println("10 * 2 = 10 << 1 = " + (10 << 1)); // x << y = x * (2 ^ y)
+        System.out.println("10 / 2 = 10 >> 1 = " + (10 >> 1)); // x >> y = x / (2 ^ y)
+
+        System.out.println();
+
+        // ============ Ternary Operator
+
+        // (condition) ? true expression : false expression
+
+        System.out.println("===== Ternary Operator =====");
+
+        System.out.println(2 > 1 ? "2 is greater than one" : "2 is not less than one");
+        System.out.println(2 < 1 ? "2 is greater than one" : "2 is not less than one");
     }
 }
