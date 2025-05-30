@@ -106,7 +106,7 @@ class Account {
     
 }
 
-// Another examplt of encapsulation
+// Another example of encapsulation
 class Shape {
     int length;
 
