@@ -104,6 +104,7 @@ class Programmer extends Employee {
     private String[] programmingLanguages;
 
     public Programmer(String name, int age, String address, String experience) {
+        // Super keyword means we call the mthods or members from the parent class and also invoke the constructor from the super class.
         super(name, age, address, experience);
     }
 
