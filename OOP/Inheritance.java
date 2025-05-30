@@ -6,7 +6,12 @@ import java.util.Objects;
 
 // Inheritance
 public class Inheritance {
+    public static void main(String[] args) {
+        String[] programmingLanguages = {"Java", "Python", "C++"};
 
+        Programmer programmer = new Programmer("Shah", 25, "Karachi", "FullStack",programmingLanguages);
+        System.out.println(programmer);
+    }
 }
 
 class Employee {
@@ -102,7 +107,12 @@ class Programmer extends Employee {
         super(name, age, address, experience);
     }
 
-    public void writingCode(){
+    public Programmer(String name, int age, String address, String experience, String[] programmingLanguages) {
+        super(name, age, address, experience);
+        this.programmingLanguages = programmingLanguages;
+    }
+
+    public void writingCode() {
         System.out.println("Write some code.");
     }
 }
