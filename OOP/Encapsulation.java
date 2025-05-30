@@ -23,7 +23,7 @@ public class Encapsulation {
     }
 }
 
-// This is the example of combine properties and bahavoir in one unit.
+// This is the example of combine properties and bahavior in one unit.
 class Account {
     private String name;
     private BigDecimal balance;
