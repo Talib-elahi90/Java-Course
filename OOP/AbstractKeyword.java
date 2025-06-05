@@ -1,5 +1,8 @@
 package OOP;
 
+// Abstract class cannot be instantiated.
+// Abstract method have no body.
+// Avoid code duplication, and increase reusability. 
 import java.util.Objects;
 
 public class AbstractKeyword {
@@ -12,7 +15,7 @@ public class AbstractKeyword {
     }
 }
 
-// This class cannot be instanciated, it use with an inheritance.
+// This class cannot be instantiated, it use with an inheritance.
 abstract class Animals {
     private String name;
 
