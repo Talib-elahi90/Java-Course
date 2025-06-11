@@ -82,7 +82,7 @@ class Person {
     }
 
 }
-
+// Default abstract methods in interface with no body.
 interface Vehicle {
 
     void applyBreak(int number);
