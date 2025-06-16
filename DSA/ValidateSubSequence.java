@@ -11,6 +11,7 @@ public class ValidateSubSequence {
 
     }
 
+    // Time O(N) | Space O(1)
     private static boolean subSequence(int[] array, int[] subArray) {
         int arrIdx = 0;
         int seqIdx = 0;
