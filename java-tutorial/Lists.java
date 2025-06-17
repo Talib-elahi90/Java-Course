@@ -17,10 +17,11 @@ public class Lists {
             System.out.print(color + " ");
         }
 
+        System.out.println();
         // Immutable List
         List<Integer> unModifiable = List.of(
             1,2,3,4
         );
-        System.out.println(unModifiable);
+        System.out.println("Immutable List" + unModifiable);
     }
 }
