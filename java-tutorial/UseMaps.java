@@ -22,5 +22,6 @@ public class UseMaps {
 
         System.out.println();
         map.entrySet().forEach(System.out::println);
+        
     }
 }
