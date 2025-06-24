@@ -14,6 +14,7 @@ public class Generics {
 }
 
 // Create Generic class, if you want to replace T with any alphabet, you could.
+// It also many of these arguments <T, K, V, M>
 class Box<T> {
     private T t;
 
