@@ -32,7 +32,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = { 5, 3, 7, 8, 1, 12, 2 };
+        int[] nums = { 4, 5, 6, 3, 7, 8, 1, 12, 2 };
         bubbleSort(nums);
         System.out.println(Arrays.toString(nums));
     }
